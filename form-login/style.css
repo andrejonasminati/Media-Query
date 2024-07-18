@@ -19,10 +19,10 @@ main{
     width: 100vw;
 }
 
-section{
+section#login{
     position: absolute;
     background-color: white;
-    width: 250px;
+    width: 260px;
     height: 500px;
     border-radius: 20px;
     top: 50%;
@@ -30,6 +30,9 @@ section{
     transform: translate(-50%,-50%);
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.784);
+
+    transition: width 0.1s, height 0.1s;
+    transition-timing-function: ease;
 }
 
 section #imagem{
@@ -42,4 +45,59 @@ section #imagem{
 section #form{
     display: block;
     padding: 10px;
+    position: relative
+}
+
+section #form h1{
+    text-align: center;
+    font-size: 1.2em
+}
+
+p{
+  text-align: center;
+  padding: 4px;  
+}
+
+form{
+    text-align: center;
+}
+
+
+div#box1{
+    margin-top: 20px;
+}
+div{
+    margin: auto;
+}
+div input{
+    border:1px solid rgba(0, 0, 0, 0.505);
+    border-radius: 3px;
+    padding-top: 4px;
+    margin-top: 5px;
+    width: 80%;
+}
+
+#button-sub{
+   
+    text-align: center;
+    padding: 4px;
+    color:rgb(255, 255, 255);
+    background-color: #49a082;
+    font-weight: bold;
+}
+
+input#button-sub:hover{
+    background-color: #ffffff;
+    border:1px solid #359c78 ;
+    color: black;
+    transition: 0.2s;
+}
+
+a#esquecer-senha{
+    text-decoration: none;
+    
+}
+
+a#esquecer-senha:hover{
+    text-decoration: underline;
 }
